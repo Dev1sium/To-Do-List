@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #F5BA89, #d31f61, #73248d);
+    color: #fff;
+    overflow: hidden;
+}
+
+header {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-section {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#newTask {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+#add {
+    border: none;
+    background: linear-gradient(135deg, #8864de, #7383ff);
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#add:hover {
+    background: linear-gradient(#2e83e4, #2e83e4);
+}
+
+#delete {
+    border: none;
+    background: linear-gradient(135deg,  rgb(255, 22, 119),#fc0345);
+    color: white;
+    padding: 3px 145px;
+    font-size: 12px;
+    margin-top: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s; 
+    white-space: nowrap;
+}
+
+#delete:hover {
+    background: linear-gradient(#e60000, #e60000);
+}
+
+ul {
+    list-style: none;
+    margin-top: 10px;
+    padding: 0;
+    overflow-y: auto;
+    max-height: 50vh;
+    border-radius: 10px;
+}
+
+ul::-webkit-scrollbar {
+    width: 6px;
+}
+
+ul::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 8px;
+    margin: 8px 0;
+    transition: 0.3s;
+}
+
+li:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+li input[type="checkbox"] {
+    transform: scale(1.2);
+    margin-right: 10px;
+}
+
+li button {
+    border: none;
+    background: linear-gradient(20deg, rgb(255, 22, 119), #fc0345);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+li button:hover {
+    background: linear-gradient(#e60000, #e60000);
+}
